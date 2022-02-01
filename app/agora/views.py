@@ -45,8 +45,8 @@ def pusher_auth():
 @agora.route('/agora/token',  methods=['POST'])
 def generate_agora_token():
     auth_user = current_user.to_json()
-    appID = os.environ.get('AGORA_APP_ID')
-    appCertificate = os.environ.get('AGORA_APP_CERTIFICATE')
+    appID = "144576c2e25c4a629ce399e7eab920b7"
+    appCertificate = "63deaf61e2ff4a13b7c8474ea82a8eac"
     channelName = request.json['channelName']
     userAccount = auth_user['username']
     expireTimeInSeconds = 3600
