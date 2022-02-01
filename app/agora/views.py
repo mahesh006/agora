@@ -10,11 +10,11 @@ from pusher import Pusher
 
 
 # Instantiate a Pusher Client
-pusher_client = Pusher(app_id=os.environ.get('PUSHER_APP_ID'),
-                       key=os.environ.get('PUSHER_KEY'),
-                       secret=os.environ.get('PUSHER_SECRET'),
+pusher_client = Pusher(app_id="1340915",
+                       key="361d34bd8ddf12fbb43a",
+                       secret="d9593d6cebccfec91331,"
                        ssl=True,
-                       cluster=os.environ.get('PUSHER_CLUSTER')
+                       cluster="ap2"
                        )
 
 @agora.route('/')
