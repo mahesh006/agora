@@ -28,8 +28,9 @@ def create_app():
     login_manager.login_view = "auth.login"
 
     db.init_app(app)
-    migrate = Migrate(app, db, compare_type=True)
     db.create_all()
+    migrate = Migrate(app, db, compare_type=True)
+    
 
     # blueprint for auth routes in our app
     from .auth import auth as auth_blueprint
