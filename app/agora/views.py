@@ -12,7 +12,7 @@ from pusher import Pusher
 # Instantiate a Pusher Client
 pusher_client = Pusher(app_id="1340915",
                        key="361d34bd8ddf12fbb43a",
-                       secret="d9593d6cebccfec91331,"
+                       secret="d9593d6cebccfec91331",
                        ssl=True,
                        cluster="ap2"
                        )
