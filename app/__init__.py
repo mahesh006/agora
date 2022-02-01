@@ -29,6 +29,7 @@ def create_app():
 
     db.init_app(app)
     migrate = Migrate(app, db, compare_type=True)
+    db.create_all()
 
     # blueprint for auth routes in our app
     from .auth import auth as auth_blueprint
